@@ -1,0 +1,148 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>NAM</title>
+
+  <link rel="stylesheet" href="normalize.css" />
+  <script src="info.js">
+
+  </script>
+</head>
+
+<body>
+  <header>
+    <h1>Information</h1>
+  </header>
+  <nav id="navi">
+    <h2>Menu</h2>
+    <ul>
+      <li><a href="honesty.html">Main</a></li>
+      <li><a href="info.html">Register</a></li>
+    </ul>
+  </nav>
+  <aside id="error">
+    <h3>Errors</h3>
+    <div id="fError"></div>
+    <div id="lError"></div>
+    <div id="passwordError"></div>
+    <div id="userError"></div>
+    <div id="ageError"></div>
+
+  </aside>
+
+  <form id="signup" name="signup" action="https://httpbin.org/post" method="post" onsubmit="return formValidation();">
+    <h3>Personal</h3>
+    <p>
+      <label title="firstName" for="fName">First Name </label>
+      <span class="inputbox">
+        <input class="inputtext" type="text" id="fName" name="fName" required="required" onchange="validatefName()" />
+
+      </span>
+    </p>
+    <br />
+
+    <p>
+      <label title="lastName">Last Name</label>
+      <span class="inputbox">
+        <input class="inputtext" type="text" id="lName" name="lName" required="required" onchange="validatelName()" />
+      </span>
+    </p>
+    <br />
+
+
+    <p>
+      <label title="password" for="password">Password</label>
+      <span class="inputbox">
+        <input class="inputtext" type="password" id="password" name="password" required="required" onchange="validatedPass()" />
+      </span>
+    </p>
+    <br />
+
+    <p>
+      <label title="username" for="username">User Name</label>
+      <span class="inputbox">
+        <input class="inputtext" type="text" name="username" id="username" required="required" onchange="validateUsername()" />
+      </span>
+    </p>
+    <br />
+
+    <p>
+      <label title="email" for="email">Email</label>
+      <span class="inputbox">
+        <input class="inputtext" type="email" name="email" id="email" required="required" placeholder="Enter a valid email" />
+      </span>
+    </p>
+    <br />
+
+    <p>
+      <label title="age">Age</label>
+      <span class="inputbox">
+        <input class="inputtext" type="number" id="Age" name="Age" required="required" onchange="validateAge()" />
+      </span>
+    </p>
+
+
+
+    <h3>Education</h3>
+
+    <p>
+      <label title="level" for="level">Education Level</label>
+      <select id="level" name="level" required size=1>
+        <option value="">-select-</option>
+        <option value="1">Technical Diploma</option>
+        <option value="2">College Diploma</option>
+        <option value="3">Bachelor's Degree</option>
+        <option value="4">Master's Degree</option>
+        <option value="5">Others</option>
+      </select>
+    </p>
+    <br />
+
+    <fieldset>
+      <legend>Education Status:</legend>
+      <ul>
+        <li>
+          <label for="status1">
+            <input type="radio" id="status1" name="useredusts" value="Graduated">
+            Graduated
+          </label>
+        </li>
+        <li>
+          <label for="status2">
+            <input type="radio" id="status2" name="useredusts" value="Curren enrolled">
+            Current enrolled
+          </label>
+        </li>
+        <li>
+          <label for="status3">
+            <input type="radio" id="status3" name="useredusts" value="DNG" required>
+            Did not graduate
+          </label>
+        </li>
+      </ul>
+    </fieldset>
+
+    <input type="hidden" name="lname" id="lname" value="Name" />
+    <input type="hidden" name="studentID" id="studentID" value="148151178" />
+
+
+
+    <p>
+      <input id="submit" type="submit" value="Submit" />
+      <input id="reset" type="reset" value="Reset" onclick="clearerrors()" />
+    </p>
+  </form>
+
+
+
+  <footer>
+    <div class="foot">
+      &copy; 2018 Seung Ho Nam
+    </div>
+  </footer>
+
+</body>
+</html>

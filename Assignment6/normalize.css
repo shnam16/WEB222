@@ -1,0 +1,99 @@
+body {
+  background-color:ivory;
+  
+}
+
+h1 {
+  color: salmon;
+  text-align: center;
+}
+h3 {
+  background-color:Highlight;
+  color: tomato;
+}
+form {
+  margin: auto;
+  width: 750px;
+  border: 10px solid #00ff00;
+  padding: 5px;
+}
+
+input, select {
+  font: 1em sans-serif;
+  width: 250px;
+  box-sizing: border-box;
+  border: 1px solid #999;
+  box-shadow: 3px 3px 5px 0px rgb(80, 80, 80);
+  border-radius: 5px;
+}
+#status1, #status2, #status3 {
+  font-family: sans-serif;
+  width: 20px;
+}
+
+fieldset {
+  width: 251px;
+  box-sizing: border-box;
+  margin-left: 217px;
+  border: 1px solid #999;
+}
+
+
+ul {
+  margin: 0;
+  padding:0;
+  list-style: none;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+
+#submit, #reset {
+  margin: 20px 0 0 150px;
+  background-color: darkslategrey;
+  border-radius: 15px;
+  width: 100px;
+  color:aliceblue;
+}
+#navi {
+  width: 200px;
+  float: left;
+  border: 1px solid #a1a1a1;
+  background-color: rgb(255, 224, 224);
+  padding-right: 10px;
+  color: #008cff;
+}
+#main {
+  margin: auto;
+  width: 750px;
+  border: 10px solid #00ff00;
+  
+}
+
+footer {
+  clear: both;
+  background-color: rgb(255, 224, 224);
+  border: 1px solid #a1a1a1;
+  color: #008cff;
+  margin: auto;
+  text-align: center;
+ 
+}
+
+section p {
+  margin:40px;
+  width:700px;
+}
+
+#error {
+  width: 200px;
+  float: right;
+  border: 1px solid #a1a1a1;
+  background-color: rgb(255, 224, 224);
+  padding-right: 20px;
+  color: #342B09;
+}
